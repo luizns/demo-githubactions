@@ -1,13 +1,11 @@
-```yaml
-# Definindo o nome do Workflow
 name: Test Workflow
 
-# Definindo quando o Workflow será disparado
 on:
   push:
-    branches: [main, developer]
+    branches:
+      - main
+      - developer
 
-# Definindo os jobs que o workflow executará
 jobs:
   test_job:
     name: Executando o Job de Teste
@@ -25,4 +23,3 @@ jobs:
 
       - name: Step 4
         run: echo "Olá, mundo! Esta é a Step 4"
-```
