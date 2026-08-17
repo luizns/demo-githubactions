@@ -24,6 +24,6 @@ jobs:
         uses: docker/build-push-action@v7.3.0
         with:
           context: .
-          tags: 'latest'
+          tags: 'luidk/demo-ghactions:latest'
           push: true
            
